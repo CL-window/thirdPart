@@ -1,0 +1,75 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+          package="com.cl.slack.third"
+>
+
+    <application android:allowBackup="true"
+                 android:label="@string/app_name"
+                 android:supportsRtl="true"
+    >
+
+    </application>
+
+
+    <!-- qq 登录 分享 辅助类 -->
+    <activity
+        android:name="com.cl.slack.third.login.QQLoginActivity"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="com.cl.slack.third.share.QQShareActivity"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name="com.cl.slack.third.share.QQZoneShareActivity"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait" />
+
+    <!-- qq 登录 分享-->
+    <activity
+        android:name="com.tencent.connect.common.AssistActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:screenOrientation="behind"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    <activity
+        android:name="com.tencent.tauth.AuthActivity"
+        android:launchMode="singleTask"
+        android:noHistory="true">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="tencent222222" />
+        </intent-filter>
+    </activity>
+    <!-- qq 登录 分享 end -->
+
+    <!-- weibo 登录 分享 辅助类 -->
+    <activity
+        android:name="com.cl.slack.third.login.WBLoginActivity"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="com.cl.slack.third.share.WBShareActivity"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait" />
+
+    <!-- 微信 分享辅助类 -->
+    <activity
+        android:name="com.cl.slack.third.share.WXShareActivity"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait" />
+    <!-- 接收微信的请求及返回值 -->
+    <activity
+        android:name="com.cl.slack.third.wxapi.WXEntryActivity"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:exported="true"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait" />
+    <!-- 微信 end -->
+
+</manifest>

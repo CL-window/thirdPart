@@ -1,0 +1,72 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="slack.cl.com.thirdpart.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="loginQQ"
+            android:text="QQ 登录"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="loginWX"
+            android:text="Weixin 登录"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="loginWB"
+            android:text="Weibo 登录"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="shareQQ"
+            android:text="QQ 分享 图片"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="shareQQZone"
+            android:text="QQ空间 分享 图片"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="shareWX"
+            android:text="Weixin 分享"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="shareWXFriends"
+            android:text="Weixin 朋友圈 分享"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="shareWB"
+            android:text="Weibo 分享 视频"/>
+    </LinearLayout>
+
+
+</ScrollView>
